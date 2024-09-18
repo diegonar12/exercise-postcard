@@ -1,0 +1,93 @@
+body {
+	background: black;
+	color: white; /* Color de texto para el fondo negro */
+	margin: 0; /* Elimina el margen por defecto */
+	font-family: Arial, sans-serif; /* Fuente legible */
+}
+
+* {
+	box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+}
+
+.postcard {
+	background: white;
+	width: 400px;
+	margin: 50px auto; /* Centra la tarjeta verticalmente y horizontalmente */
+	border-radius: 10px; /* Bordes redondeados */
+	overflow: hidden; /* Oculta contenido que se desborda */
+	padding: 20px; /* Espacio interno */
+}
+
+.postcard-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px; /* Espacio debajo del header */
+	border-bottom: 1px solid #ccc; /* Línea separadora opcional */
+}
+
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+
+.postcard-header h1 {
+	margin: 0;
+	color: black; /* Color del texto del header */
+}
+
+.postcard-body {
+	display: flex;
+	gap: 20px; /* Espacio entre los dos divs */
+}
+.postcard-body p {
+	color: black;
+}
+
+.body-left,
+.body-right {
+	flex: 1;
+}
+
+.body-left p:first-child {
+	margin-top: 0;
+}
+
+.body-right {
+	padding: 10px;
+}
+
+input,
+textarea {
+	border: 1px solid grey; /* Borde visible */
+	border-radius: 5px; /* Bordes redondeados en los campos */
+	margin-bottom: 10px; /* Espacio debajo de los campos de entrada */
+	width: 100%; /* Ocupa el ancho completo disponible */
+	padding: 10px; /* Espacio interno en los campos */
+	font-size: 16px; /* Tamaño de fuente legible */
+	color: black; /* Color del texto en los campos */
+	background-color: #f9f9f9; /* Fondo claro para los campos */
+}
+
+textarea {
+	height: 100px; /* Ajusta la altura del campo de comentario */
+}
+
+.postcard-footer {
+	text-align: center;
+	padding-top: 10px; /* Espacio arriba del footer */
+}
+
+button {
+	background-color: gray;
+	color: white; /* Color del texto en el botón */
+	padding: 10px 20px; /* Espacio interno en el botón */
+	border: none;
+	border-radius: 5px; /* Bordes redondeados en el botón */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+	font-size: 16px; /* Tamaño de fuente legible */
+}
+
+button:hover {
+	background-color: darkgray; /* Cambia el color de fondo cuando el mouse está sobre el botón */
+}

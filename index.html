@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="postcard">
+			<div class="postcard-header">
+				<h1>My Postcard</h1>
+				<img
+					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
+					alt="4geeks logo"
+				/>
+			</div>
+			<div class="postcard-body">
+				<div class="body-left">
+					<p>Hola este es mi primer proyecto, usando HTML5 y CSS3 durante el curso de 4geeks</p>
+					<br />
+					<p>Déjame un comentario</p>
+				</div>
+				<div class="body-right">
+					<form action="/submit" method="post">
+						<label for="name">Nombre:</label>
+						<input type="text" id="name" name="name" placeholder="Tu nombre aquí" required />
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" placeholder="Tu email" required />
+
+						<label for="comment">Comentario:</label>
+						<textarea id="comment" name="comment" placeholder="Tu comentario" required></textarea>
+
+						<button type="submit">Enviar My Postcard</button>
+					</form>
+				</div>
+			</div>
+			<div class="postcard-footer"></div>
+		</div>
+	</body>
+</html>
